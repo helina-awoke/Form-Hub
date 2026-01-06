@@ -40,6 +40,26 @@ h1 {
   font-weight: 700;
   text-align: center;
 }
+/* Title animation */
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 32px;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  animation: slideFadeIn 1.5s ease-out; /* apply animation */
+}
 
 /* Title underline */
 .title-divider {
@@ -191,6 +211,7 @@ ol.description li {
   </div>
 </body>
 </html>
+
 
 
 
