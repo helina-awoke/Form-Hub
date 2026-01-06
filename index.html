@@ -27,10 +27,14 @@
 
     /* Logo */
     .logo {
-      width: 180px;
-      margin-bottom: 30px;
-      display: block;
-    }
+  width: 180px;       /* max width you want */
+  height: auto;       /* keeps aspect ratio */
+  margin-bottom: 30px;
+  display: block;
+  border-radius: 8px; /* optional: slightly rounded corners */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* optional: subtle shadow */
+  object-fit: contain; /* ensures image fits nicely without stretching */
+}
 
    /* Heading */
 h1 {
@@ -214,6 +218,7 @@ ol.description li {
   </div>
 </body>
 </html>
+
 
 
 
