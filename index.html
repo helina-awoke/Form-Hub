@@ -104,6 +104,34 @@ ol.description li {
         font-size: 16px;
       }
     }
+    /* Instruction box styling */
+.instructions-box {
+  max-width: 90%;
+  background-color: #ffffff;
+  border-left: 5px solid #1976d2;
+  padding: 20px 25px;
+  margin-bottom: 40px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.instructions-box h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #1976d2;
+}
+
+.instructions-box ol {
+  margin-left: 20px;
+}
+
+.instructions-box li {
+  margin-bottom: 12px;
+  font-size: 17px;
+  color: #444;
+}
+
   </style>
 </head>
 <body>
@@ -121,14 +149,13 @@ ol.description li {
   forms under the corresponding MOH Research Thematic Area.
 </p>
 
-<p class="description">
-  <strong>Submission Instructions:</strong>
-</p>
-
-<ol class="description">
-  <li>Complete all nine forms sequentially, following the designated order.</li>
-  <li>After submitting each form, use the return link on the submission confirmation page to return to this page and continue with the next form.</li>
-</ol>
+<div class="instructions-box">
+  <h2>Submission Instructions</h2>
+  <ol>
+    <li>Complete all nine forms sequentially, following the designated order.</li>
+    <li>After submitting each form, use the return link on the submission confirmation page to return to this page and continue with the next form.</li>
+  </ol>
+</div>
 
 
     <!-- Buttons vertically -->
@@ -151,6 +178,7 @@ ol.description li {
   </div>
 </body>
 </html>
+
 
 
 
