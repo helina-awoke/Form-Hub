@@ -40,25 +40,25 @@ h1 {
   font-weight: 700;
   text-align: center;
 }
-/* Horizontal slide animation for title */
-@keyframes slideRightToLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(50px); /* start 50px to the right */
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0); /* end at normal position */
-  }
-}
-
+/* Continuous horizontal sliding title */
 h1 {
   font-size: 32px;
   color: #1a1a1a;
-  margin-bottom: 10px;
   font-weight: 700;
-  text-align: center;
-  animation: slideRightToLeft 1.5s ease-out;
+  white-space: nowrap; /* prevent line breaks */
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  animation: marquee 10s linear infinite; /* 10s speed, loops forever */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* start fully offscreen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* move fully offscreen to the left */
+  }
 }
 
 
@@ -212,6 +212,7 @@ ol.description li {
   </div>
 </body>
 </html>
+
 
 
 
