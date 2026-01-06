@@ -40,15 +40,15 @@ h1 {
   font-weight: 700;
   text-align: center;
 }
-/* Title animation */
-@keyframes slideFadeIn {
+/* Horizontal slide animation for title */
+@keyframes slideRightToLeft {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateX(50px); /* start 50px to the right */
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0); /* end at normal position */
   }
 }
 
@@ -58,8 +58,9 @@ h1 {
   margin-bottom: 10px;
   font-weight: 700;
   text-align: center;
-  animation: slideFadeIn 1.5s ease-out; /* apply animation */
+  animation: slideRightToLeft 1.5s ease-out;
 }
+
 
 /* Title underline */
 .title-divider {
@@ -211,6 +212,7 @@ ol.description li {
   </div>
 </body>
 </html>
+
 
 
 
